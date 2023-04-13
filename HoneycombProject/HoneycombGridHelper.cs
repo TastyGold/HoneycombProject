@@ -88,9 +88,9 @@ namespace HoneycombProject
             };
 
             Vector2 comparePosition = GetGridToWorldPos(compareCoord);
-            Raylib.DrawCircle((int)comparePosition.X, (int)comparePosition.Y, 20, Color.PURPLE);
-            Raylib.DrawLineEx(worldPos, comparePosition, 3, Color.GREEN);
-            Raylib.DrawLineEx(worldPos, GetGridToWorldPos(new VecInt2(gridX, gridY)), 3, Color.GREEN);
+            //Raylib.DrawCircle((int)comparePosition.X, (int)comparePosition.Y, 20, Color.PURPLE);
+            //Raylib.DrawLineEx(worldPos, comparePosition, 3, Color.GREEN);
+            //Raylib.DrawLineEx(worldPos, GetGridToWorldPos(new VecInt2(gridX, gridY)), 3, Color.GREEN);
 
             bool swap = Vector2.DistanceSquared(worldPos, comparePosition) < Vector2.DistanceSquared(worldPos, GetGridToWorldPos(new VecInt2(gridX, gridY)));
             if (swap)

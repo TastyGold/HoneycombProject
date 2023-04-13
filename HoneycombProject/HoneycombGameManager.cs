@@ -28,7 +28,7 @@ namespace HoneycombProject
             Raylib.ClearBackground(HoneycombGridHelper.backgroundColor);
 
             HoneycombGridHelper.DrawGridLines(26, 14);
-            HoneycombGridHelper.DrawGridSquares(26, 14);
+            //HoneycombGridHelper.DrawGridSquares(26, 14);
             VecInt2 mouseCoord = HoneycombCamera.GetMouseGridCoordinate();
             Raylib.DrawCircle((int)HoneycombGridHelper.GetGridToWorldX(mouseCoord.x), (int)HoneycombGridHelper.GetGridToWorldY(mouseCoord.x, mouseCoord.y), 20, Color.RED);
 
